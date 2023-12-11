@@ -17,9 +17,6 @@ public class Tama_state
     static int stateLove=0;
     static int stateIll=0;
 
-    //수뭉이 나이 종류
-    final String[] ageList = {"egg", "baby", "illBaby", "kid", "illKid", "adult", "illAdult", "dead"};
-
     //수뭉이 현재 나이
     static String currentAge="egg";
     static int age=0;

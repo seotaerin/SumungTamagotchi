@@ -4,7 +4,6 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Tama_age age=new Tama_age();
         Tama_frame frame = new Tama_frame(); //프레임 클래스 객체를 만들고 생성자를 호출해 프레임, 패널, 버튼, 라벨 등 초기설정
 
         long hungryTimeDiffer; //밥 먹은지 얼마나 지났는지, 포만감 감소를 계산하기 위한 변수
@@ -67,7 +66,7 @@ public class Main
                 Tama_state.currentAge="baby"; //baby상태일때는 질병수치가 50이상될일이 없어서 질병수치 50이상일때를 만들이 않았음
             }
 
-            age.setAgeImg(); //상태에 맞는 이미지로 변경한다
+            Tama_age.setAgeImg(); //상태에 맞는 이미지로 변경한다
             Tama_state.setAge(); //나이를 설정한다
             frame.repaint();
 

@@ -7,7 +7,6 @@ public class Tama_age
     //수뭉이 상태 별 이미지 불러오기
     static ImageIcon eggImg = new ImageIcon((Tama_age.class.getClassLoader().getResource("egg.gif")));
     static ImageIcon babyImg = new ImageIcon((Tama_age.class.getClassLoader().getResource("baby.gif")));
-    static ImageIcon illBabyImg = new ImageIcon((Tama_age.class.getClassLoader().getResource("illBaby.png")));
     static ImageIcon kidImg = new ImageIcon((Tama_age.class.getClassLoader().getResource("kid.gif")));
     static ImageIcon illKidImg = new ImageIcon((Tama_age.class.getClassLoader().getResource("illKid.gif")));
     static ImageIcon adultImg = new ImageIcon((Tama_age.class.getClassLoader().getResource("adult.gif")));
@@ -22,12 +21,11 @@ public class Tama_age
     }
 
     //상태가 바뀌면 이미지를 변경하기 위한 함수
-    void setAgeImg()
+    public static void setAgeImg()
     {
         switch (Tama_state.currentAge) {
             case "egg" -> ageLabel.setIcon(eggImg);
             case "baby" -> ageLabel.setIcon(babyImg);
-            case "illBaby" -> ageLabel.setIcon(illBabyImg);
             case "kid" -> ageLabel.setIcon(kidImg);
             case "illKid" -> ageLabel.setIcon(illKidImg);
             case "adult" -> ageLabel.setIcon(adultImg);
